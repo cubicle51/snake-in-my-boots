@@ -10,7 +10,7 @@
     <h1 style="text-align: center;">You've scanned the code!</h1>
     
     <audio id="myAudio">
-        <source src="your_audio_file.wav" type="audio/wav">
+        <source src="toy-03.wav" type="audio/wav">
         Your browser does not support the audio element.
     </audio>
 
