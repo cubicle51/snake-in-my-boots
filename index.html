@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Sound!</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">You've scanned the code!</h1>
+    
+    <audio id="myAudio">
+        <source src="toy-03.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <p style="text-align: center;">
+        If the audio doesn't play automatically, please press the button below.
+    </p>
+
+    <div style="text-align: center;">
+        <button onclick="playAudio()">Play Sound</button>
+    </div>
+
+    <script>
+        // Get the audio element by its ID
+        var audio = document.getElementById("myAudio");
+
+        // Function to play the audio
+        function playAudio() {
+            audio.play();
+        }
+
+        // This is a function that will try to play the audio as soon as the page loads.
+        // It's wrapped in a 'window.onload' function to ensure the entire page is loaded first.
+        window.onload = function() {
+            // Attempt to play the audio. The browser might block this due to autoplay policies.
+            playAudio();
+        };
+    </script>
+
+</body>
+</html>
